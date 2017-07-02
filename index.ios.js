@@ -1,53 +1,26 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
+ * Scrapbooks - Display different albums you like
  */
 
-import React, { Component } from 'react';
+
+// Imports stuff
+import React, { Component } from 'react'
 import {
   AppRegistry,
   StyleSheet,
   Text,
   View
 } from 'react-native';
+import Header from './src/components/header';
 
-export default class scrapbooks extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
-    );
-  }
-}
+// Creates the main component
+const App = () => {
+  return (
+    <View>
+      <Header />
+    </View>
+   )
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
-
-AppRegistry.registerComponent('scrapbooks', () => scrapbooks);
+// Render to the device
+AppRegistry.registerComponent('scrapbooks', () => App);
