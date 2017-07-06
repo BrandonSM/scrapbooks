@@ -1,10 +1,17 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Image } from 'react-native';
 
 const CardSection = (props) => {
 	return (
 		<View style={styles.container}>
 			{props.children}
+			<View>
+				<Image/>
+			</View>
+			<View>
+				<Text></Text>
+				<Text></Text>
+			</View>
 		</View>
 	);
 };
