@@ -17,7 +17,7 @@ import AlbumList from './src/components/AlbumList';
 // Creates the main component -- must be wrapped in <View></View> if returning more than 1 component.
 const App = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Header headerText={'Albums'}/>
       <AlbumList />
     </View>
@@ -25,7 +25,9 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
-  
+  container: {
+    flex: 1,
+  },
 });
 
 // Render to the device
